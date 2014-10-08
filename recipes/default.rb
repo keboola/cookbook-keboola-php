@@ -9,6 +9,8 @@
 
 include_recipe 'php'
 
+# required by zendopcache
+package "gcc-c++"
 
 php_pear "zendopcache" do
   action :install
